@@ -1,121 +1,121 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>非凡娱乐 - 祝老板旗开得胜</title>
-    <!-- 引入Font Awesome图标库 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* ========== 基础样式重置 ========== */
-        /* 重置所有元素的内外边距，使用border-box盒模型 */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Microsoft YaHei', sans-serif;
-            -webkit-tap-highlight-color: transparent; /* 移除移动端点击高亮效果 */
+<！doctype 超文本标记语言>
+<超文本标记语言<html 朗="zh-CN">朗="zh-CN">
+<头>
+<元 字符集="UTF-8"><元 字符集="UTF-8">
+<元 姓名="视口"内容="宽度=设备宽度，初始比例=1.0，最大比例=1.0，用户可缩放=no"><元 姓名="视口" 内容="宽度=设备宽度，初始比例=1.0，最大比例=1.0，用户可缩放=否">
+<标题>非凡娱乐-祝老板旗开得胜</标题><标题>非凡娱乐 - 祝老板旗开得胜</标题>
+<！ --引入字体棒极了图标库--><！ --引入字体棒极了图标库-->
+<链接 rel="样式表"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><链接 rel="样式表" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<风格><风格>
+/* ========== 基础样式重置 ========== */
+/*重置所有元素的内外边距，使用边框框盒模型*/
+*{{
+页边距：0；
+填充: 0;填充: 0;
+框大小：边框框；
+字体系列："微软雅黑"，无衬线；
+-webkit-tap-highlight-color：透明；/*移除移动端点击高亮效果*/
+}}
+        
+/* 禁止文本选择和长按菜单 */
+*{{
+-webkit-user-select：无；
+-moz-user-select：无；
+-ms-user-select：无；
+用户选择：无；
+}}
+        
+/* ========== 页面整体样式 ========== */
+/*设置html和body元素占满全屏，禁止横向滚动*/
+超文本标记语言，正文{
+宽度：100宽度：100%；
+高度：100高度：100%；；
+overflow-x：隐藏；
+位置：固定；
+toptop:0；；
+左：0；
+右：0；
+底部：0；
         }
         
-        /* 禁止文本选择和长按菜单 */
-        * {
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+/* 设置页面背景渐变和基本文本样式 */
+正文{
+背景：线性梯度(135度，#1a1a2e，#16213e，#0f3460)；
+颜色：#fff；
+线高：1.6；
+填料：15px；
+过卷行为：无；/*禁止弹性滚动*/
+触摸动作：操纵；/*禁止缩放*/
         }
         
-        /* ========== 页面整体样式 ========== */
-        /* 设置html和body元素占满全屏，禁止横向滚动 */
-        html, body {
-            width: 100%;
-            height: 100%;
-            overflow-x: hidden;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+/* ========== 主容器样式 ========== */
+/*主内容容器，居中显示，最大宽度500 PX*/
+.container{
+宽度：100%；
+最大宽度：500px；
+页边距：0自动；
+背景：rgba(0，0，0，0.7)；
+边界半径：15px；
+溢出：隐藏；
+盒阴影：05px15pxrgba(0，0，0，0.5)；
+最大高度：90vh；/*限制最大高度为视口的90%*/
+overflow-y：自动；/*允许垂直滚动*/
         }
         
-        /* 设置页面背景渐变和基本文本样式 */
-        body {
-            background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
-            color: #fff;
-            line-height: 1.6;
-            padding: 15px;
-            overscroll-behavior: none; /* 禁止弹性滚动 */
-            touch-action: manipulation; /* 禁止缩放 */
+/* 隐藏滚动条但保持可滚动 */
+.container：：-webkit-scrollbar{
+显示：无；
         }
         
-        /* ========== 主容器样式 ========== */
-        /* 主内容容器，居中显示，最大宽度500px */
-        .container {
-            width: 100%;
-            max-width: 500px;
-            margin: 0 auto;
-            background: rgba(0, 0, 0, 0.7);
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-            max-height: 90vh; /* 限制最大高度为视口的90% */
-            overflow-y: auto; /* 允许垂直滚动 */
-        }
-        
-        /* 隐藏滚动条但保持可滚动 */
-        .container::-webkit-scrollbar {
-            display: none;
-        }
-        
-        /* ========== 顶部横幅区域样式 ========== */
-    .header-banner {
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 15px;
+/* ========== 顶部横幅区域样式 ========== */
+.header-banner{
+高度：150px；
+位置：相对；
+溢出：隐藏；
+显示：柔性；
+对齐项：居中；
+对齐-内容：居中；
+文本对齐：居中；
+填料：15px；
 }
 
-.banner-slider {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 300%; /* 三张图片的宽度 */
-    height: 100%;
-    display: flex;
-    animation: slide 15s infinite;
+.banner-slider{
+位置：绝对；
+top:0；
+左：0；
+width:300%；/*三张图片的宽度*/
+高度：100%；
+显示：柔性；
+动画：滑动15秒无限；
 }
 
-.banner-slide {
-    width: 33.33%; /* 每张图片占1/3宽度 */
-    height: 100%;
-    background-size: cover;
-    background-position: center;
+.banner-slide{
+width:33.33%；/*每张图片占1/3宽度*/
+高度：100%；
+背景尺寸：封面；
+背景位置：中心；
 }
 
-.banner-slide:nth-child(1) {
-    background-image: url('gg1.jpg');
+.banner-slide：第n个子项(1){
+背景图像：URL('gg1.jpg')；
 }
-.banner-slide:nth-child(2) {
-    background-image: url('gg2.jpg');
+.banner-slide：第n个子项(2){
+背景图像：URL('gg2.jpg')；
 }
-.banner-slide:nth-child(3) {
-    background-image: url('gg3.jpg');
-}
-
-.banner-content {
-    position: relative;
-    z-index: 2;
-    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+.banner-slide：第n个子项(3){
+背景图像：URL('gg3.jpg')；
 }
 
-@keyframes slide {
-    0%, 25% { transform: translateX(0); }
-    33%, 58% { transform: translateX(-33.33%); }
-    66%, 91% { transform: translateX(-66.66%); }
+.banner-content{
+位置：相对；
+Z指数：2；
+text-shadow:0010px rgba(0,0,0,0.7);
+}
+
+@keyframes 幻灯片{
+0%，25%{transform:translateX(0)；}
+33%，58%{transform:translateX(-33.33%)；}
+66%，91%{transform:translateX(-66.66%)；}
     100% { transform: translateX(0); }
 }
         
@@ -224,7 +224,7 @@
             background: rgba(233, 69, 96, 0.2);
             border-radius: 10px;
             margin: 15px 0;
-            overflow: hidden;
+溢出：隐藏；
         }
         
         /* 单个选项卡 */
@@ -251,7 +251,7 @@
         
         /* ========== 内容区域样式 ========== */
         .content-section {
-            display: none;
+显示：无；
             animation: fadeIn 0.5s ease;
         }
         
@@ -270,32 +270,32 @@
         .software-title {
             text-align: center;
             font-size: 1.3rem;
-            color: #fff;
+颜色：#fff；
             margin: 15px 0 10px;
         }
         
         /* ========== 游戏卡片网格布局 ========== */
-        .game-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3列网格 */
-            gap: 10px;
-            margin-bottom: 20px;
+.game-grid{
+显示：网格；
+网格模板列：repeat(3，1fr)；/*3列网格*/
+间隙：10px；
+底边距：20px；
         }
         
-        /* ========== 游戏卡片样式 ========== */
-        .game-card {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 10px;
-            padding: 10px;
-            text-align: center;
-            transition: all 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            min-height: 120px;
-            cursor: pointer;
-            position: relative; /* 为标签定位做准备 */
+/* ========== 游戏卡片样式 ========== */
+.game-card{
+背景：rgba(255，255，255，0.1)；
+边界半径：10px；
+填充：10px；
+文本对齐：居中；
+过渡：所有0.3s轻松；
+显示：柔性；
+弯曲方向：立柱；
+对齐项：居中；
+对齐-内容：居中；
+最小高度：120px；
+光标：指针；
+位置：相对；/*为标签定位做准备*/
         }
         
         /* 游戏卡片悬停效果 */
@@ -314,7 +314,7 @@
         .game-image {
             width: 50px;
             height: 50px;
-            border-radius: 10px;
+边界半径：10px；
             object-fit: cover; /* 保持图片比例并填充容器 */
             margin-bottom: 8px;
         }
@@ -323,7 +323,7 @@
         .game-card h3 {
             font-size: 0.85rem;
             margin-bottom: 5px;
-            font-weight: bold;
+字体粗细：粗体；
         }
         
         /* 游戏描述样式 */
@@ -342,7 +342,7 @@
             font-size: 0.6rem;
             padding: 2px 6px;
             border-radius: 8px;
-            font-weight: bold;
+字体粗细：粗体；
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
         
@@ -463,102 +463,102 @@
                         <p>南宫旗下，大水稳台</p>
                     </div>
                     
-                    <!-- 游戏卡片3 -->
-                    <div class="game-card" data-url="https://wcwx.paradisemall.net/app/register.php?site_id=1032&topId=2023608">
-                        <span class="game-tag tag-vip">推荐</span>
-                        <img src="cf.png" class="game-image" alt="超凡国际">
-                        <h3>超凡国际</h3>
+                    <! -- 游戏卡片3 -->
+                    <div 班级="游戏卡" data-url="https://wcwx.paradisemall.net/app/register.php?site_id=1032&topid=2023608">
+                        <跨度 班级="游戏标签标签贵宾">推荐</跨度>
+                        <IMG src="cf.png" 班级="游戏图像" alt="超凡国际">
+                        <H3>超凡国际</H3>
                         <p>南宫旗下，大水稳台</p>
                     </div>
                     
-                    <!-- 游戏卡片4 -->
-                    <div class="game-card" data-url="https://wcwx.paradisemall.net/app/register.php?site_id=1030&topId=3137251">
-                        <span class="game-tag tag-vip">推荐</span>
-                        <img src="df.jpg" class="game-image" alt="枪战精英">
-                        <h3>巅峰国际</h3>
+                    <! -- 游戏卡片4 -->
+                    <div 班级="游戏卡" data-url="https://wcwx.paradisemall.net/app/register.php?site_id=1030&topid=3137251">
+                        <跨度 班级="游戏标签标签贵宾">推荐</跨度>
+                        <IMG src="df.jpg" 班级="游戏图像" alt="枪战精英">
+                        <H3>巅峰国际</H3>
                         <p>南宫旗下，大水稳台</p>
                     </div>
                     
-                    <!-- 游戏卡片5 -->
-                    <div class="game-card" data-url="https://23.235.160.179:7788/#/link?allwin=21963170">
-                        <img src="ng.png" class="game-image" alt="街头篮球">
-                        <h3>NG28</h3>
+                    <! -- 游戏卡片5 -->
+                    <div 班级="游戏卡" data-url="https://23.235.160.179:7788/#/link?allwin=21963170">
+                        <IMG src="ng.png" 班级="游戏图像" alt="街头篮球">
+                        <H3>NG28</H3>
                         <p>十年老台，提款无忧</p>
                     </div>
                     
                     <!-- 游戏卡片6 -->
-                    <div class="game-card" data-url="https://tz.wx-gujdtq3.com/app/register.php?site_id=2228&topId=1263476">
-                        <img src="dmg.png" class="game-image" alt="解谜大师">
-                        <h3>大满贯</h3>
-                        <p>新人大水，必红稳台</p>
-                    </div>
-                    <!-- 游戏卡片4 -->
-                    <div class="game-card" data-url="https://nvjmce.hfjcl.com/app/register.php?site_id=1019&topId=10830915">
-                        <img src="ty.png" class="game-image" alt="枪战精英">
-                        <h3>NG体育</h3>
-                        <p>南宫旗下，大水稳台</p>
-                    </div>
-                    
-                    <!-- 游戏卡片5 -->
-                    <div class="game-card" data-url="https://tz.wx-ulslyd12.com/app/register.php?site_id=2304&topId=1087123">
-                        <img src="gjr.png" class="game-image" alt="街头篮球">
-                        <h3>国际人</h3>
-                        <p>十年老台，提款无忧</p>
-                    </div>
-                    
-                    <!-- 游戏卡片6 -->
-                    <div class="game-card" data-url="https://xjvueb.hefaship.com/app/register.php?site_id=1017&topId=6886987&aPlanId=1&isAllProxy=1&support_top_id=6886987">
-                                                <span class="game-tag tag-vip">推荐</span>
+.game-grid{</风格 >="游戏卡" data-url="https://tz.wx-gujdtq3.com/app/register.php?site_id=2228&topid=1263476">
+显示：网格；</头 >="dmg.png" 班级="游戏图像" alt="解谜大师">
+网格模板列：repeat(3，1fr)；/*3列网格*/<H3>大满贯</H3>
+间隙：10px；<！--主容器-->p>新人大水，必红稳台</p>
+底边距：20px；</div>
+<! -- 游戏卡片4 -->
+盒阴影：05px15pxrgba(0，0，0，0.3)；<div 班级="游戏卡" data-url="https://nvjmce.hfjcl.com/app/register.php?site_id=1019&topid=10830915">
+/* ========== 游戏卡片样式 ========== */<IMG========== 游戏卡片样式 ========== */src="typ.png" 班级="游戏图像"alt="枪战精英">
+.game-card{.game-card{<H3>NG体育
+背景：rgba(255，255，255，0.1)；<p>南宫旗下，大水稳台班级p>
+边界半径：10px；</div>
+填充：10px；
+文本对齐：居中；<! -- 游戏卡片5 -->
+过渡：所有0.3s轻松；<div 班级="游戏卡"data-url="https://tz.wx-ulslyd12.com/app/register.php?site_id=2304&元>
+显示：柔性；显示：柔性；<IMG src="gjr.png" 班级="游戏图像" alt="街头篮球">
+弯曲方向：立柱；<! -- 主要内容区域 -->H3>国际人<标题>
+对齐项：居中；<p>十年老台，提款无忧班级p>
+对齐-内容：居中；<！ --邀请奖励区域-->div>
+最小高度：120px；
+光标：指针；<! -- 游戏卡片6 -->
+位置：相对；/*为标签定位做准备*/<div 班级="游戏卡" data-url不</&跨度&>&isAllProxy=1&support_top_id=6886987">
+底边距：8px；底边距：8px；<跨度 班级="游戏标签标签贵宾">推荐</跨度>
 
-                        <img src="yw.png" class="game-image" alt="解谜大师">
-                        <h3>亿万28</h3>
-                        <p>新人大水，必红稳台</p>
-                    </div>
-                    <!-- 游戏卡片7 -->
-                    <div class="game-card" data-url="https://wcwx.paradisemall.net/app/register.php?site_id=800&topId=18917879">
-                        <img src="yh.jpg" class="game-image" alt="足球世界">
-                        <h3>壹号娱乐</h3>
-                        <p>新人大水，必红稳台</p>
-                    </div>
-                                        <!-- 游戏卡片8 -->
-                    <div class="game-card" data-url="https://156.234.70.10:61108/#/link?allwin=10921528">
-                        <img src="28.png" class="game-image" alt="幽灵生存">
-                        <h3>28圈</h3>
+/* 游戏卡片悬停效果 */<IMG src="yw.png" 班级="游戏图像" alt=>>
+.游戏卡：悬停{.游戏卡：悬停{<H3>亿万28
+变换：translateY(-5px)；<p>新人大水，必红稳台班级p>
+盒阴影：05px15pxrgba(0，0，0，0.3)；</div>
+背景：rgba(255，255，255，0.15)；<! --游戏卡片7-->
+字体粗细：粗体；<div 班级="游戏卡" data-url=>&topid=18917879">
+                        <IMGIMG src="yh.jpg" 班级="游戏图像" alt=
+/*/*游戏卡片点击效果*/<H3>
+.游戏卡：活动{<p>新人大水，必红稳台</p><p>新人大水，必红稳台</p>
+变换：比例(0.95)；<！ --联系信息区域-->div>
+<! -- 游戏卡片8 -->
+颜色：#CCC；<p>联系旺旺：155639298>p联系旺旺: 155639298</pP=>></p=>>
+/*游戏图片样式*/<div班级="contact-info1">="游戏图像"alt="幽灵生存">班级div="contact-info1"=>="游戏图像"alt="幽灵生存">>="游戏图像" alt="幽灵生存">
+.game-image{</div>28圈</H3></div>28圈</H3>
+宽度：50px；</div>新人大水，必红稳台</div</p>
+.game-tag{</div></div>
+位置：绝对；
+<! -- 游戏卡片9 -->
+                    <div 班级="游戏卡" data-url="https://wlkyiy.paradisemall.net/app/register.php?site_id=1021&topid=2261183">
+                        <IMG src="dd.png" 班级="游戏图像" alt="空战英豪">
+                        <H3>多多28</H3>
                         <p>新人大水，必红稳台</p>
                     </div>
                     
-                    <!-- 游戏卡片9 -->
-                    <div class="game-card" data-url="https://wlkyiy.paradisemall.net/app/register.php?site_id=1021&topId=2261183">
-                        <img src="dd.png" class="game-image" alt="空战英豪">
-                        <h3>多多28</h3>
-                        <p>新人大水，必红稳台</p>
-                    </div>
-                    
-                    <!-- 游戏卡片10 -->
-                    <div class="game-card" data-url="https://tz.wx-zxivoq2.com/app/register.php?site_id=2173&topId=2614093">
-                        <img src="ds.png" class="game-image" alt="极速赛车">
-                        <h3>东升国际</h3>
+<! -- 游戏卡片10 -->
+                    <div 班级="游戏卡" data-url="https://tz.wx-zxivoq2.com/app/register.php?site_id=2173&topid=2614093">
+<IMG<imgIMG<imgIMG<imgIMG<img src="ds1.png"class="game-image"alt="极速赛车"srcsrc="ds1.png"班级="游戏图像"alt="极速赛车">="ds1.png"班级="游戏图像"alt="极速赛车"srcsrc="ds1.png"班级="游戏图像"alt="极速赛车">="ds1.png"班级="游戏图像"alt="极速赛车"srcsrc="ds1.png"班级="游戏图像"alt="极速赛车">=
+                        <H3>东升国际</H3>
                                                 <p>新人大水，必红稳台</p>
 
                     </div>
-                    <!-- 游戏卡片8 -->
-<div class="game-card" data-url="https://wcwx.paradisemall.net/app/register.php?site_id=1008&topId=3049796">
-                        <span class="game-tag tag-popular">绑定送28</span>
-                        <img src="hm.png" class="game-image" alt="魔法学院">
-                        <h3>豪门国际</h3>
+<! -- 游戏卡片8 -->
+<div 班级="游戏卡" data-url="https://wcwx.paradisemall.net/app/register.php?site_id=1008&topid=3049796">
+                        <跨度 班级="游戏标签标签热门">绑定送28</跨度>
+                        <IMG src="hm.png" 班级="游戏图像" alt="魔法学院">
+                        <H3>豪门国际</H3>
                         <p>新人大水，注册绑定送28</p>
                     </div>
-                    <!-- 游戏卡片9 -->
-                    <div class="game-card" data-url="https://wlkyiy.paradisemall.net/app/register.php?site_id=1012&topId=3603559">
-                        <img src="wc.jpg" class="game-image" alt="空战英豪">
-                        <h3>旺财28</h3>
+<! -- 游戏卡片9 -->
+                    <div 班级="游戏卡" data-url="https://wlkyiy.paradisemall.net/app/register.php?site_id=1012&topid=3603559">
+                        <IMG src="wc.jpg" 班级="游戏图像" alt="空战英豪">
+                        <H3>旺财28</H3>
                         <p>新人大水，必红稳台</p>
                     </div>
                     
-                    <!-- 游戏卡片10 -->
-                    <div class="game-card" data-url="https://xjvueb.hefaship.com/app/register.php?site_id=1010&topId=3514959">
-                        <img src="sj.png" class="game-image" alt="极速赛车">
-                        <h3>赏金国际</h3>
+<! -- 游戏卡片10 -->
+                    <div 班级="游戏卡" data-url="https://xjvueb.hefaship.com/app/register.php?site_id=1010&topid=3514959">
+                        <IMG src="sj.png" 班级="游戏图像" alt="极速赛车">
+                        <H3>赏金国际</H3>
                                                 <p>新人大水，必红稳台</p>
 
                     </div>
